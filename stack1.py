@@ -1,0 +1,13 @@
+from queue import LifoQueue
+stack= LifoQueue (maxsize=3)
+print("initial size",stack.qsize())
+stack.put('m')
+stack.put('n')
+stack.put('o')
+print("full",stack.full())
+print("size",stack.qsize())
+print('\nelements popped from the stack')
+print(stack.get())
+print(stack.get())
+print(stack.get())
+print("\nempty",stack.empty())
